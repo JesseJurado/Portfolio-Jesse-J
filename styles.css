@@ -1,0 +1,359 @@
+/* Global Styles */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    padding: 10px 20px;
+    background-color: #FAC000 !important;
+}
+
+.nav-link {
+    font-size: 1.5rem;
+    padding: 0 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.resume-link {
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #ffffff;
+    padding: 60px 0;
+}
+
+.hero-title {
+    font-size: 3rem; /* Base size */
+}
+
+.hero-text {
+    font-size: 1.25rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #000;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    color: #000;
+}
+
+.text-container {
+    padding-right: 20px;
+}
+
+.name-color {
+    color: blue;
+}
+
+.highlight {
+    color: #FAC000;
+}
+
+.img-container img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #FAC000;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #f39c12;
+}
+
+/* Case Studies Section */
+.case-studies {
+    background-color: #0071FA;
+    padding: 60px 0;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #FAC000;
+}
+
+.project-card {
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    max-width: 90%; /* Make the cards slightly smaller */
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-img {
+    max-width: 200px;
+    margin-bottom: 15px;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.project-description {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* About Me Section */
+.about-me {
+    background-color: #ffffff;
+}
+
+.about-me .section-title {
+    font-size: 3rem; /* Match the Case Studies title */
+    color: #FAC000; /* Consistent yellow color */
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 30px; /* Add space below the header */
+}
+
+.about-text {
+    font-size: 1.25rem; /* Same font size as the hero section */
+    color: #000000;
+    line-height: 1.8;
+    max-width: 80%; /* Optional: Limit text width for better readability */
+    margin: 0 auto; /* Center the text horizontally */
+    text-align: left;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Skills and Design Tools Section */
+.skills-tools {
+    background-color: #f4f4f4; /* Light background for contrast */
+    padding: 40px 0;
+}
+
+.skills-tools .section-title {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #FAC000;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.skills-text {
+    font-size: 1.25rem;
+    color: #000;
+    line-height: 1.8;
+}
+
+.skills-tools img {
+    width: 80px; /* Set consistent size for all images */
+    height: 80px; /* Maintain square dimensions */
+    object-fit: contain; /* Ensures the image scales properly */
+    margin: 0 auto; /* Center images within their column */
+}
+
+.logo-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between images in a group */
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #FAC000; /* Same color as the navbar */
+    padding: 30px 0;
+    position: relative; /* Ensure SVG stays within the footer */
+}
+
+/* Footer Navigation */
+.footer-nav {
+    margin-bottom: 20px;
+}
+
+.footer-link {
+    font-size: 1.25rem;
+    color: black;
+    text-decoration: none;
+    display: block; /* Stack links */
+    padding: 5px 0; /* Add spacing */
+    text-align: left;
+}
+
+.footer-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Contact Section */
+.contact-text {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: black;
+}
+
+.contact-info {
+    font-size: 1rem;
+    color: black;
+    display: flex;
+    align-items: center;
+    margin-top: 10px; /* Add space above the contact details */
+}
+
+.email-link {
+    color: black;
+    text-decoration: none;
+    margin-right: 20px; /* More space between email and icons */
+}
+
+.email-link:hover {
+    text-decoration: underline;
+}
+
+.icons img {
+    max-width: 24px; /* Size of the icons */
+    margin-left: 15px; /* Increase space between icons */
+    cursor: pointer;
+}
+
+.icons img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    transition: transform 0.2s;
+}
+
+/* SVG Styling */
+.footer-svg {
+    width: 100%; /* Make SVG full width */
+    height: auto;
+    margin-top: 20px; /* Space between content and SVG */
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer-nav ul {
+        text-align: center;
+    }
+
+    .contact-info {
+        flex-direction: column; /* Stack email and icons */
+        align-items: flex-start;
+    }
+
+    .icons img {
+        margin-left: 0;
+        margin-top: 5px; /* Add spacing for stacked icons */
+    }
+}
+
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem; /* Adjusted for mobile */
+    }
+
+    .hero-text {
+        font-size: 1.1rem; /* Adjusted for mobile */
+    }
+
+    .img-container img {
+        max-width: 250px; /* Keep image size balanced */
+    }
+
+    .about-me .row {
+        flex-direction: column; /* Stack image and text on smaller screens */
+    }
+
+    .project-card {
+        max-width: 100%; /* Allow cards to take more space on mobile */
+    }
+
+    .project-img {
+        max-width: 180px; /* Slightly smaller project images */
+    }
+}
+
+/* Responsive Tweaks */
+@media (max-width: 1024px) {
+    .hero h1 {
+        font-size: 2.5rem; /* Adjusted font size for tablets */
+    }
+
+    .hero p {
+        font-size: 1.125rem; /* Smaller font size for paragraphs */
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem; /* Adjusted font size for smaller screens */
+    }
+
+    .hero p {
+        font-size: 1rem; /* Adjusted font size for smaller screens */
+    }
+
+    .img-container img {
+        max-width: 250px; /* Adjust image size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.5rem; /* Further reduced for mobile devices */
+    }
+
+    .hero p {
+        font-size: 0.9rem; /* Further reduced for mobile devices */
+    }
+}
+
+/* Responsive Behavior */
+@media (max-width: 768px) {
+    .skills-tools .row {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        text-align: center;
+    }
+
+    .skills-tools img {
+        width: 60px; /* Smaller images for smaller screens */
+        height: 60px;
+    }
+
+    .skills-text {
+        margin-top: 10px; /* Add space between images and text */
+    }
+}
