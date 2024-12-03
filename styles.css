@@ -11,8 +11,9 @@ body {
 
 .nav-link {
     font-size: 1.5rem;
-    padding: 0 20px;
-    color: black;
+    padding: 0 20px; /* Existing padding */
+    margin: 0 10px; /* Added margin for spacing between links */
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
@@ -27,7 +28,7 @@ body {
 
 .resume-link {
     background-color: blue;
-    color: white;
+    color: white !important;
     border-radius: 5px;
 }
 
@@ -117,12 +118,14 @@ body {
 }
 
 .project-title {
+    color: #ffffff;
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 10px;
 }
 
 .project-description {
+    color: rgb(255, 255, 255);
     font-size: 1rem;
     margin-bottom: 20px;
 }
@@ -199,6 +202,16 @@ body {
     padding: 30px 0;
     position: relative; /* Ensure SVG stays within the footer */
 }
+
+.nav-link {
+    padding: 5px 0;
+    color: #000; /* Adjust as needed */
+  }
+  
+  .footer .text-start {
+    margin-bottom: 20px;
+  }
+  
 
 /* Footer Navigation */
 .footer-nav {
@@ -357,3 +370,14 @@ body {
         margin-top: 10px; /* Add space between images and text */
     }
 }
+/*HOME PAGE CSS^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+
+/*CS hero*/
+.CS-hero{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/*CS CS section*/
+
