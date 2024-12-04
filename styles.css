@@ -370,6 +370,15 @@ body {
         margin-top: 10px; /* Add space between images and text */
     }
 }
+
+
+
+
+
+
+
+
+
 /*HOME PAGE CSS^^^^^^^^^^^^^^^^^^^^^^^^*/
 
 
@@ -379,5 +388,63 @@ body {
     margin-bottom: 50px;
 }
 
-/*CS CS section*/
+
+
+
+
+
+
+
+/*Community Gardens section*/
+
+.CommunityGardens-project-img {
+    max-width: 300px; /* Adjust size as needed */
+    margin: 0 auto; /* Center image */
+  }
+  
+
+  .CommunityGardens-case-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .CommunityGardens-case-overview {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  .CommunityGardens-detail-heading {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .CommunityGardens-section-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .CommunityGardens-section-description {
+    font-size: 1.1rem;
+    color: #444;
+  }
+  
+  .CommunityGardens-insight-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .CommunityGardens-insight-list li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .CommunityGardens-research-img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  .CommunityGardens-conclusion-text {
+    font-size: 1.2rem;
+  }
+  
+  
 
