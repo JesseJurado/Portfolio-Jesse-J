@@ -445,6 +445,16 @@ body {
   .CommunityGardens-conclusion-text {
     font-size: 1.2rem;
   }
-  
-  
 
+
+  /*Role tools timeline*/
+.CommunityGardens-role-tools-timeline{
+    margin-bottom: 24px;
+    display: flex;
+    justify-content:space-evenly;
+}
+  
+.Myroletoolstimeline{
+    display: flex;
+    flex-direction: column;
+}
