@@ -406,6 +406,7 @@ body {
   .CommunityGardens-case-title {
     font-size: 2.5rem;
     font-weight: bold;
+    
   }
   
   .CommunityGardens-case-overview {
@@ -457,4 +458,49 @@ body {
 .Myroletoolstimeline{
     display: flex;
     flex-direction: column;
+}
+
+.rowCG {
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.blueBGpad{
+    background-color: #0071FA;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.designsteps{
+    padding-top: 40px;
+    padding-bottom: 140px;
+}
+
+.centerlayout{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.centerheader{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+/*Comix section*/
+
+.CXrow{
+    display: flex;
+    justify-content: space-around;
+}
+
+.ComixBlueBG{
+    background-color: #005B99;
+    padding: 15px;
+    color:#ffffff
 }
