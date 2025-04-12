@@ -6,83 +6,115 @@
   <title>Jesse Jurado's Portfolio</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Google Font: Inter -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Google Font: Montserrat and Roboto -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <!-- Custom Styles -->
   <link rel="stylesheet" href="styles.css">
 </head>
+
+
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Jesse Jurado</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href=".//Case Studies.html">Case Studies</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">About Me</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-        <li class="nav-item">
-          <a class="nav-link resume-link" href="#">Resume</a>
-        </li>
-      </ul>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand custom-logo-nav" href="index.html">J.</a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link mx-3" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link mx-3" href="Case Studies.html">Case Studies</a></li>
+          <li class="nav-item"><a class="nav-link mx-3" href="aboutme.html">About Me</a></li>
+          <li class="nav-item"><a class="nav-link mx-3" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link mx-3" href="resume.html">Resume</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <section class="hero d-flex align-items-center justify-content-center py-5">
-    <div class="container d-flex align-items-center justify-content-between flex-column flex-md-row">
-      <div class="text-container text-center text-md-start">
-        <h1 class="display-4 hero-title">
-          <span class="highlight">Hi, I'm</span> <span class="name-color">Jesse</span><span class="highlight">.</span>
-        </h1>
-        <p class="lead hero-text">
-          <span class="highlight">UX/UI</span>
-          <span class="name-color">Designer</span> | Crafting Useful, Efficient, and User-Friendly Solutions
-        </p>
-        <a href="#work" class="btn btn-primary">Explore My Work</a>
-      </div>
-      <div class="img-container">
-        <img src=".//Assest/DS complet.png" alt="Jesse" class="img-fluid">
+  <section class="hero text-dark py-5">
+    <div class="container">
+      <div class="row align-items-start">
+        <div class="col-md-7">
+          <h1 class="display-4 mb-4">Hola, I'm Jesse.</h1>
+          <p class="lead mb-4"> UX/UI Designer with Expertise in Figma, Information Architecture, Design Thinking, and Collaborative Design | Focused on Creating Efficient and Intuitive User Experiences</p>
+          <a href="Case Studies.html" class="mb-4 btn btn-lg rounded-pill text-white btn-custom-hover">Explore My Work</a>
+        </div>
+    
+        <div class="col-md-5">
+          <img src="https://cdn3d.iconscout.com/3d/premium/thumb/blockchain-6841751-5607102.png" class="img-fluid">
+        </div>
+
       </div>
     </div>
   </section>
 
   <!-- Case Studies Section -->
-  <section id="case-studies" class="case-studies py-5">
-    <div class="container">
-      <h1 class="text-center section-title">Case <span class="name-color">Studies</span>.</h1>
-      <div class="row justify-content-center g-4">
-        <!-- Project Cards -->
-        <div class="col-md-4">
-          <div class="project-card text-center">
-            <img src=".//Assest/image-removebg-preview.png" alt="Project 1" class="img-fluid project-img">
-            <h3 class="project-title">Community Gardens</h3>
-            <p class="project-description">Community Gardens – a fictional app that connects users with local gardens to access fresh, organic produce.</p>
-            <a href=".//CommunityGardens.html" class="btn btn-primary">View Case</a>
+
+  <!-- Card Unused
+  <div class="container my-5">
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card custom-card text-center">
+          <img src=".//Assest/Community gardens mock up.jpg" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">Community Gardens</h5>
+            <p class="card-text">Community Gardens – a fictional app that connects users with local gardens to access fresh, organic produce.</p>
+            <a href="#" class="btn btn-primary rounded-pill">View Case</a>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="project-card text-center">
-            <img src=".//Assest/image-removebg-preview (1).png" alt="Project 2" class="img-fluid project-img">
-            <h3 class="project-title">Comix</h3>
-            <p class="project-description">Comix – a fictional commerce app that connects comic book buyers and sellers.</p>
-            <a href="#project2" class="btn btn-primary">View Case</a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="project-card text-center">
-            <img src=".//Assest/remove_back_ground-removebg-preview.png" alt="Project 3" class="img-fluid project-img">
-            <h3 class="project-title">Riverside Art Center</h3>
-            <p class="project-description">Riverside Art Center – a complete redesign of a nonprofit website to enhance user experience and promote the organization.</p>
-            <a href="#project3" class="btn btn-primary">View Case</a>
+      </div>
+  
+      <div class="col-md-6">
+        <div class="card custom-card text-center">
+          <img src=".//Assest/Comix mock up.jpg" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">Comix</h5>
+            <p class="card-text">Comix – a fictional commerce app that connects comic book buyers and sellers.</p>
+            <a href="#" class="btn btn-primary rounded-pill">View Case</a>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+-->
+
+  <div class="container my-5">
+    <div class="row g-4">
+      <!-- Card 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card card-hover h-100 border-0">
+          <img src=".//Assest/Community gardens mock up.jpg" class="card-img-top img-fluid object-fit-cover" alt="Project image" style="aspect-ratio: 1 / 1;">
+          <div class="card-body px-0">
+            <h5 class="card-title fw-bold">Community Gardens</h5>
+            <p class="card-text text-muted">Community Gardens – a fictional app that connects users with local gardens to access fresh, organic produce.</p>
+            <a href="#" class="btn btn-sm rounded-pill text-white mt-2" style="background-color: #005B99;">View Case</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Card 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card card-hover h-100 border-0">
+          <img src=".//Assest/Comix mock up.jpg" class="card-img-top img-fluid object-fit-cover" alt="Project image" style="aspect-ratio: 1 / 1;">
+          <div class="card-body px-0">
+            <h5 class="card-title fw-bold">Comix</h5>
+            <p class="card-text text-muted">Comix – a fictional commerce app that connects comic book buyers and sellers. <br> <br></p>
+            <a href="#" class="btn btn-sm rounded-pill text-white mt-2" style="background-color: #005B99;">View Case</a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  
+  
+  
 
   <!-- About Me Section -->
   <section id="about-me" class="about-me py-5">
@@ -136,35 +168,44 @@
   </section>
 
 <!-- Footer -->
-<footer class="footer py-4">
-  <div class="container">
-    <div class="row">
-      <!-- Navigation Links (Left-Aligned Vertical Layout) -->
-      <div class="col-12 col-md-4 text-start">
-        <ul class="nav flex-column">
-          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="/Case Studies.html">Case Studies</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">About Me</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Resume</a></li>
-        </ul>
+<footer class="text-white text-center py-4" style="background-image: url(.//Assest/Footer.svg); background-size: cover;">
+  <div class="container"> 
+    <div class="row align-items-start">
+      <div class="col-md-4">
+        <nav class="nav justify-content-center flex-column align-items-start py-3">
+          <h4 class="fs-5">Quick Links</h4>
+          <div style="height: 3px; width: 29px; background-color: #E27A03; margin-bottom: 15px;"> </div>
+          <a class="nav-link text-white fs-6" href="#">Home</a>
+          <a class="nav-link text-white fs-6" href="#">Case Studies</a>
+          <a class="nav-link text-white fs-6" href="#">About Me</a>
+          <a class="nav-link text-white fs-6" href="#">Contact</a>
+          <a class="nav-link text-white fs-6" href="#">Resume</a>
+        </nav>
       </div>
-
-      <!-- Contact Details -->
-      <div class="col-12 col-md-8 text-center">
-        <p class="mb-2">Contact: <a href="mailto:jermiahj630@gmail.com">jermiahj630@gmail.com</a></p>
-        <div class="social-links">
-          <a href="#"><img src="Assest/Email.png" alt="Mail Icon" class="contact-icon me-2"></a>
-          <a href="#"><img src="Assest/Linkedin.png" alt="LinkedIn Icon" class="contact-icon"></a>
-        </div>
-
-        <!-- Footer SVG -->
-        <img src="Assest/zigzag.svg" alt="Footer Design" class="footer-svg mt-3" style="width: 60%; max-width: 300px;">
+      
+      <div class="col-md-4">
+        <nav class="nav justify-content-center flex-column align-items-start py-3">
+          <h4 class="fs-5">Social Links</h4>
+          <div style="height: 3px; width: 29px; background-color: #E27A03; margin-bottom: 15px;"> </div>
+          <a class="nav-link text-white fs-6" href="#">LinkedIn</a>
+          <a class="nav-link text-white fs-6" href="#">Github</a>
+          
+        </nav>
+      </div>
+  
+      <div class="col-md-4">
+        <nav class="nav justify-content-center flex-column align-items-start py-3">
+          <h4 class="fs-5">Contact</h4>
+          <div style="height: 3px; width: 29px; background-color: #E27A03; margin-bottom: 15px;"> </div>
+          <a class="nav-link text-white fs-6" href="#">jermiahj630@gmail.com</a>
+          <a class="nav-link text-white fs-6" href="#">7047248629</a>
+          
+        </nav>
       </div>
     </div>
   </div>
-</footer>
-
+    <p class="mb-2">© 2025 Jesse. All rights reserved.</p>
+  </footer>
 
 
   <!-- Bootstrap JS -->

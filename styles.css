@@ -1,134 +1,80 @@
-/* Global Styles */
+/* Global Font Styles */
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
-/* Navbar */
-.navbar {
-    padding: 10px 20px;
-    background-color: #FAC000 !important;
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Global Button Style */
+.btn-custom-hover {
+    background-color: #005B99;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .btn-custom-hover:hover {
+    background-color: #004377; /* darker shade */
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+/*nav___made this one myself, most should be styled with bootstrap*/ 
+.custom-logo-nav {
+    font-size: 3rem;
 }
 
 .nav-link {
-    font-size: 1.5rem;
-    padding: 0 20px; /* Existing padding */
-    margin: 0 10px; /* Added margin for spacing between links */
-    color: rgb(0, 0, 0);
+    position: relative;
     text-decoration: none;
-}
-
-.nav-link:hover {
-    text-decoration: underline;
-}
-
-.navbar-brand {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.resume-link {
-    background-color: blue;
-    color: white !important;
-    border-radius: 5px;
-}
-
-/* Hero Section */
-.hero {
-    background-color: #ffffff;
-    padding: 60px 0;
-}
-
-.hero-title {
-    font-size: 3rem; /* Base size */
-}
-
-.hero-text {
-    font-size: 1.25rem;
-}
-
-.hero h1 {
-    font-size: 3rem;
-    font-weight: 900;
-    color: #000;
-}
-
-.hero p {
-    font-size: 1.25rem;
-    color: #000;
-}
-
-.text-container {
-    padding-right: 20px;
-}
-
-.name-color {
-    color: blue;
-}
-
-.highlight {
-    color: #FAC000;
-}
-
-.img-container img {
-    max-width: 300px;
+    color: black; /* Or whatever your color is */
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: #E27A03; /* Or your theme color */
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover::after {
     width: 100%;
-    height: auto;
-}
-
-/* Buttons */
-.btn-primary {
-    background-color: #FAC000;
-    color: black;
+  }
+  
+/* card style unused 
+.custom-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-}
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
 
-.btn-primary:hover {
-    background-color: #f39c12;
-}
+  .custom-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  }
 
-/* Case Studies Section */
-.case-studies {
-    background-color: #0071FA;
-    padding: 60px 0;
-}
+  .custom-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+*/
+  
+/* Global card style */
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card-hover:hover {
+    transform: translateY(-5px);
+  }
 
-.section-title {
-    font-size: 3rem;
-    font-weight: 900;
-    color: #FAC000;
-}
-
-.project-card {
-    padding: 20px;
-    border-radius: 10px;
-    transition: transform 0.3s;
-    max-width: 90%; /* Make the cards slightly smaller */
-}
-
-.project-card:hover {
-    transform: translateY(-10px);
-}
-
-.project-img {
-    max-width: 200px;
-    margin-bottom: 15px;
-}
-
-.project-title {
-    color: #ffffff;
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.project-description {
-    color: rgb(255, 255, 255);
-    font-size: 1rem;
-    margin-bottom: 20px;
-}
 
 /* About Me Section */
 .about-me {
@@ -196,100 +142,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* Footer Section */
-.footer {
-    background-color: #FAC000; /* Same color as the navbar */
-    padding: 30px 0;
-    position: relative; /* Ensure SVG stays within the footer */
-}
 
-.nav-link {
-    padding: 5px 0;
-    color: #000; /* Adjust as needed */
-  }
-  
-  .footer .text-start {
-    margin-bottom: 20px;
-  }
-  
-
-/* Footer Navigation */
-.footer-nav {
-    margin-bottom: 20px;
-}
-
-.footer-link {
-    font-size: 1.25rem;
-    color: black;
-    text-decoration: none;
-    display: block; /* Stack links */
-    padding: 5px 0; /* Add spacing */
-    text-align: left;
-}
-
-.footer-link:hover {
-    text-decoration: underline; /* Underline on hover */
-}
-
-/* Contact Section */
-.contact-text {
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: black;
-}
-
-.contact-info {
-    font-size: 1rem;
-    color: black;
-    display: flex;
-    align-items: center;
-    margin-top: 10px; /* Add space above the contact details */
-}
-
-.email-link {
-    color: black;
-    text-decoration: none;
-    margin-right: 20px; /* More space between email and icons */
-}
-
-.email-link:hover {
-    text-decoration: underline;
-}
-
-.icons img {
-    max-width: 24px; /* Size of the icons */
-    margin-left: 15px; /* Increase space between icons */
-    cursor: pointer;
-}
-
-.icons img:hover {
-    transform: scale(1.1); /* Slight zoom on hover */
-    transition: transform 0.2s;
-}
-
-/* SVG Styling */
-.footer-svg {
-    width: 100%; /* Make SVG full width */
-    height: auto;
-    margin-top: 20px; /* Space between content and SVG */
-}
-
-/* Responsive Footer */
-@media (max-width: 768px) {
-    .footer-nav ul {
-        text-align: center;
-    }
-
-    .contact-info {
-        flex-direction: column; /* Stack email and icons */
-        align-items: flex-start;
-    }
-
-    .icons img {
-        margin-left: 0;
-        margin-top: 5px; /* Add spacing for stacked icons */
-    }
-}
 
 
 /* Responsive Tweaks */
@@ -406,6 +259,7 @@ body {
   .CommunityGardens-case-title {
     font-size: 2.5rem;
     font-weight: bold;
+    
   }
   
   .CommunityGardens-case-overview {
@@ -457,4 +311,49 @@ body {
 .Myroletoolstimeline{
     display: flex;
     flex-direction: column;
+}
+
+.rowCG {
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.blueBGpad{
+    background-color: #0071FA;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.designsteps{
+    padding-top: 40px;
+    padding-bottom: 140px;
+}
+
+.centerlayout{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.centerheader{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+/*Comix section*/
+
+.CXrow{
+    display: flex;
+    justify-content: space-around;
+}
+
+.ComixBlueBG{
+    background-color: #005B99;
+    padding: 15px;
+    color:#ffffff
 }
