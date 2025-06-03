@@ -7,6 +7,10 @@ p {
     font-family: 'Roboto', sans-serif;
 }
 
+ul, li {
+  font-family: 'Roboto', sans-serif;
+}
+
 /* Global Button Style */
 .btn-custom-hover {
     background-color: #005B99;
@@ -74,135 +78,6 @@ p {
   .card-hover:hover {
     transform: translateY(-5px);
   }
-
-
-/* About Me Section */
-none
-
-/* Skills and Design Tools Section */
-
-
-
-
-
-
-
-
-
-
-
-/*HOME PAGE CSS^^^^^^^^^^^^^^^^^^^^^^^^*/
-
-
-/*CS hero*/
-.CS-hero{
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-
-
-
-
-
-
-
-/*Community Gardens section*/
-
-.CommunityGardens-project-img {
-    max-width: 300px; /* Adjust size as needed */
-    margin: 0 auto; /* Center image */
-  }
-  
-
-  .CommunityGardens-case-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    
-  }
-  
-  .CommunityGardens-case-overview {
-    font-size: 1.2rem;
-    color: #666;
-  }
-  
-  .CommunityGardens-detail-heading {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .CommunityGardens-section-title {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .CommunityGardens-section-description {
-    font-size: 1.1rem;
-    color: #444;
-  }
-  
-  .CommunityGardens-insight-title {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-  }
-  
-  .CommunityGardens-insight-list li {
-    margin-bottom: 0.5rem;
-  }
-  
-  .CommunityGardens-research-img {
-    max-width: 100%;
-    border-radius: 8px;
-  }
-  
-  .CommunityGardens-conclusion-text {
-    font-size: 1.2rem;
-  }
-
-
-  /*Role tools timeline*/
-.CommunityGardens-role-tools-timeline{
-    margin-bottom: 24px;
-    display: flex;
-    justify-content:space-evenly;
-}
-  
-.Myroletoolstimeline{
-    display: flex;
-    flex-direction: column;
-}
-
-.rowCG {
-    display: flex;
-    align-items: center;
-    margin-bottom: 80px;
-}
-
-.blueBGpad{
-    background-color: #0071FA;
-    padding: 20px;
-    border-radius: 5px;
-}
-
-.designsteps{
-    padding-top: 40px;
-    padding-bottom: 140px;
-}
-
-.centerlayout{
-    display: flex;
-    flex-direction: column;
-}
-
-
-.centerheader{
-    display: flex;
-    justify-content: center;
-}
-
-
-
-
 
 /*Comix section*/
 
